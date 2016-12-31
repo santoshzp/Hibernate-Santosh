@@ -1,0 +1,30 @@
+
+
+
+
+import org.hibernate.Session;
+import org.hibernate.SessionFactory;
+import org.hibernate.Transaction;
+import org.hibernate.cfg.Configuration;
+
+public class ProductMain {
+	public static void main(String[] args) {
+		Configuration configuration = new Configuration();
+		configuration.configure("hibernate.cfg.xml");
+		SessionFactory sessionFactory = configuration.buildSessionFactory();
+		Session session = sessionFactory.openSession();
+		
+		Product product = new Product();
+		product.setProductNumber(10);
+		product.setProductName("santosh");
+		product.setPrice(20d);
+		
+		Transaction transaction = session.beginTransaction();
+		session.save(product);
+		System.out.println("insert successfully...");
+		transaction.commit();
+		session.close();
+		sessionFactory.close();
+	}
+
+}
