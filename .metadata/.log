@@ -23,3 +23,41 @@ Command-line arguments:  -data /home/santosh/JAVA/GitHub/Hibernate-Santosh -os l
 
 !ENTRY org.eclipse.jface.text 2 0 2016-12-31 12:44:19.902
 !MESSAGE Duplicate template id: 'org.eclipse.wst.xslt.templates.xpath.round'
+
+!ENTRY org.eclipse.recommenders.types.rcp 1 4 2016-12-31 15:55:35.139
+!MESSAGE Full project indexing required:
+  [+] /home/santosh/Downloads/jars/antlr-2.7.6.jar
+  [+] /home/santosh/Downloads/jars/commons-collections-3.1.jar
+  [+] /home/santosh/Downloads/jars/dom4j-1.6.1.jar
+  [+] /home/santosh/Downloads/jars/hibernate-jpa-2.0-api-1.0.1.Final.jar
+  [+] /home/santosh/Downloads/jars/hibernate3.jar
+  [+] /home/santosh/Downloads/jars/javassist-3.12.0.GA.jar
+  [+] /home/santosh/Downloads/jars/jta-1.1.jar
+  [+] /home/santosh/Downloads/jars/mysql-connector-java-5.1.18.jar
+  [+] /home/santosh/Downloads/jars/slf4j-api-1.6.1.jar
+  [+] /usr/lib/jvm/java-8-oracle/jre/lib/charsets.jar
+  [+] /usr/lib/jvm/java-8-oracle/jre/lib/ext/cldrdata.jar
+  [+] /usr/lib/jvm/java-8-oracle/jre/lib/ext/dnsns.jar
+  [+] /usr/lib/jvm/java-8-oracle/jre/lib/ext/jaccess.jar
+  [+] /usr/lib/jvm/java-8-oracle/jre/lib/ext/jfxrt.jar
+  [+] /usr/lib/jvm/java-8-oracle/jre/lib/ext/localedata.jar
+  [+] /usr/lib/jvm/java-8-oracle/jre/lib/ext/nashorn.jar
+  [+] /usr/lib/jvm/java-8-oracle/jre/lib/ext/sunec.jar
+  [+] /usr/lib/jvm/java-8-oracle/jre/lib/ext/sunjce_provider.jar
+  [+] /usr/lib/jvm/java-8-oracle/jre/lib/ext/sunpkcs11.jar
+  [+] /usr/lib/jvm/java-8-oracle/jre/lib/ext/zipfs.jar
+  [+] /usr/lib/jvm/java-8-oracle/jre/lib/jce.jar
+  [+] /usr/lib/jvm/java-8-oracle/jre/lib/jfr.jar
+  [+] /usr/lib/jvm/java-8-oracle/jre/lib/jsse.jar
+  [+] /usr/lib/jvm/java-8-oracle/jre/lib/resources.jar
+  [+] /usr/lib/jvm/java-8-oracle/jre/lib/rt.jar
+
+!STACK 0
+org.eclipse.recommenders.utils.Logs$LogTraceException
+	at org.eclipse.recommenders.utils.Logs$LogTraceException.newTrace(Logs.java:381)
+	at org.eclipse.recommenders.utils.Logs.log(Logs.java:134)
+	at org.eclipse.recommenders.internal.types.rcp.ProjectTypesIndex.needsRebuild(ProjectTypesIndex.java:169)
+	at org.eclipse.recommenders.internal.types.rcp.ProjectTypesIndex.startUp(ProjectTypesIndex.java:122)
+	at com.google.common.util.concurrent.AbstractIdleService$2$1.run(AbstractIdleService.java:54)
+	at com.google.common.util.concurrent.Callables$3.run(Callables.java:93)
+	at java.lang.Thread.run(Thread.java:745)
